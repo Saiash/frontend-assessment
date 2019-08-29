@@ -1,0 +1,45 @@
+.container {
+	max-width: 800px;
+	margin: auto;
+}
+.menu {
+	overflow: auto;
+}
+.menu_i-header {
+	padding: 15px 30px;
+	background-color: #2EC14E;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.menu_i-header:hover {
+	background-color: #29AD46;
+}
+.menu_i-header.picked {
+	background-color: #24993D;
+}
+.menu_i-content {
+	display: none;
+    padding: 15px;
+    clear: both;
+}
+.menu_i-content.picked {
+	display: block;
+}
+.menu_i {
+	float: left;
+	width: 100%;
+	display: inline-block;
+}
+.template {
+	display: none;
+}
+@media only screen and (max-width: 600px) {
+	.menu_i-content {
+		position: absolute;
+	    top: 48px;
+	    left: 0;
+	}
+	.menu_i {
+		width: initial;
+	}
+}
